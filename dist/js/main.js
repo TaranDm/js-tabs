@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
               //скрыли все эллементы таб контент
             item.classList.add('hide');
             item.classList.remove('show', 'fade');
+        // .show{display: block}.hide{display:none}.fade{animation-name: fade; animation-duration: 1.5s;}@keyframes fade {from{opacity: 0.1;}to{opacity: 1;}}
               // item.style.display = 'none';
         });
         tabs.forEach(item =>{
