@@ -18,7 +18,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }
    function showTabContent(i = 0) {
         //показываем 1й эл (в i передаем номер элемента).
-       tabsContent[i].classList.add('show', 'fade');
+       tabsContent[i].classList.add('show', 'fade'); 
+       // show{display: block} .fade{animation-name: fade; animation-duration: 1.5s;} @keyframes fade {from{opacity: 0.1;}to{opacity: 1;}}
        tabsContent[i].classList.remove('hide');
       // tabsContent[i].style.display='block';
        //добавляем к 1му эл. класс active
