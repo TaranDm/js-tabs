@@ -6,7 +6,9 @@ window.addEventListener('DOMContentLoaded', function () {
     function hideTabContent() {
         tabsContent.forEach(item => {
               //скрыли все эллементы таб контент
-              item.style.display = 'none';
+            item.classList.add('hide');
+            item.classList.remove('show', 'fade');
+              // item.style.display = 'none';
         });
         tabs.forEach(item =>{
             //у всех эл. таб удаляем класс active
@@ -15,7 +17,9 @@ window.addEventListener('DOMContentLoaded', function () {
     }
    function showTabContent(i = 0) {
         //показываем 1й эл (в i передаем номер элемента).
-       tabsContent[i].style.display='block';
+       tabsContent[i].classList.add('show', 'fade');
+       tabsContent[i].classList.remove('hide');
+      // tabsContent[i].style.display='block';
        //добавляем к 1му эл. класс active
        tabs[i].classList.add('tabheader__item_active');
    }
